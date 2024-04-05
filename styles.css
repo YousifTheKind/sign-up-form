@@ -36,12 +36,9 @@ p {
 }
 a { 
     color: inherit; 
-
 }
 
-input, label {
-    display: block;
-}
+
 .background-img {
     height: 100vh;
     width: 600px;
@@ -64,7 +61,7 @@ input, label {
     box-sizing: border-box;
     background-color: white;
     height: 500px;
-    width: 1320px;
+    width: 1300px;
     box-shadow: 0px 1px 2px black;
 }
 
@@ -118,7 +115,7 @@ input, label {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     margin-left: 3rem;
-    width: 1000px;
+    width: 700px;
 }
 
 .input-fields {
@@ -131,4 +128,39 @@ input, label {
     font-family: sans-serif;
     font-size: 2rem;
     grid-column: span 2;
+}
+
+input:focus {
+    border: #2950ff 1px solid;
+    box-shadow: 0 0 2px #000000;
+    outline: none;
+}
+
+input[type="password"]:not(:focus):user-invalid {
+    border: #ff0000 1px solid;
+}
+
+input[type="password"]:not(:focus):user-invalid ~ .error {
+    visibility: visible;
+}
+
+input {
+    width: 70%;
+    appearance: none;
+    border: rgb(197, 197, 197) 1px solid;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #fcfcfc;
+}
+label {
+    font-size: 0.7rem;
+    font-family: sans-serif;
+}
+
+.error {
+    visibility: hidden;
+    color: red;
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    margin-top: 1px;
 }
