@@ -26,42 +26,44 @@
                 <br>Sign up <em>now</em> to get started</h1><h1>You <em>know</em> you want to.</h1>
             </div>
             <div class="form-section">
-                <form action="" method="post" class="form">
+                <form action="" method="post" class="form" id="myform">
                     <div class="legend">
                         <legend>Let's do this!</legend>
                     </div>
                     <div class="input-fields">
                         <label for="first_name">FIRST NAME</label>
-                        <input type="text" id="first_name">
+                        <input type="text" id="first_name" required>
                     </div>
 
                     <div class="input-fields">
                         <label for="last_name">LAST NAME</label>
-                        <input type="text" id="last_name">
+                        <input type="text" id="last_name" required>
                     </div>
 
                     <div class="input-fields">
                         <label for="email">EMAIL</label>
-                        <input type="email" id="email">
+                        <input type="email" id="email" required>
                     </div>
 
                     <div class="input-fields">
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" id="phone">
+                        <input type="tel" id="phone" required>
                     </div>
 
                     <div class="input-fields">
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password">
+                        <input type="password" id="password" required>
                     </div>
 
                     <div class="input-fields">
                         <label for="confirm_password">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm_password">
+                        <input type="password" id="confirm_password" required>
                     </div>
+
                 </form>
             </div>
-            <button>Create Account</button>
+            <button type="submit" form="myform">Create Account</button>
+
             <p>Already have an account? <a href="" class="login">Log in</a></p>
         </div>
     </main>
