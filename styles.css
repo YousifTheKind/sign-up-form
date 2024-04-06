@@ -102,7 +102,7 @@ a {
 }
 
 .credit {
-    position: relative;
+    position: absolute;
     top: 95vh;
     left: 200px;
     color: white;
