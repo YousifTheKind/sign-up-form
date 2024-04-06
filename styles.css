@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: 'norsebold';
     src: url('/font/norse-bold-webfont.woff2') format('woff2'),
@@ -46,11 +50,9 @@ a {
 
 .main {
     display: flex;    
-    box-sizing: border-box;
 }
 
 .content {
-    box-sizing: border-box;
     margin: 3rem 0rem 0rem 3rem;
     font-size: 0.8rem;
     width: 150ch;
@@ -58,7 +60,6 @@ a {
 }
 
 .form-section {
-    box-sizing: border-box;
     background-color: white;
     height: 500px;
     width: 1300px;
@@ -72,7 +73,6 @@ a {
 .container {
     position: relative;
     margin-left: auto;
-    box-sizing: border-box;
 }
 
 .logo-card {

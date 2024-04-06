@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up form</title>
     <link rel="stylesheet" href="/styles.css">
+
+    <script>
+
+        var checkPassword = function() {
+            
+            if(document.getElementById("password").value !== document.getElementById("confirm_password").value) {
+                document.getElementById("message").textContent = "Password doesn't match";
+                document.getElementById("message").style.cssText = "color: red; font-size: 0.8rem;";
+            }
+
+            else {
+                document.getElementById("message").textContent = "Password matches"
+            }
+        }
+
+    </script>
 </head>
 <body>
     <main class="main">
@@ -52,13 +68,14 @@
 
                     <div class="input-fields">
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password" required minlength= 8>
+                        <input type="password" id="password" name="password1" required minlength= 8>
                         <span class="error">*Min 8 chars</span>
+                        <span id="message"></span>
                     </div>
 
                     <div class="input-fields">
                         <label for="confirm_password">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm_password" required minlength= 8>
+                        <input type="password" id="confirm_password" name="password2" minlength= 8 onkeyup="checkPassword();">
                     </div>
 
                 </form>
