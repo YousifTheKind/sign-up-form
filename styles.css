@@ -14,11 +14,10 @@
 body {
     margin: 0px;
     background-color: #f6f6f6;
-}
-
-h1, p, button {
     font-family: sans-serif;
 }
+
+
 
 button {
     background-color: #596D48;
@@ -34,7 +33,6 @@ button {
 }
 
 p {
-    font-size: 1rem;
     font-weight: bold;
     margin-left: 3rem;
 }
@@ -56,7 +54,6 @@ a {
     margin: 3rem 0rem 0rem 3rem;
     font-size: 0.8rem;
     width: 150ch;
-    font-family: sans-serif;
 }
 
 .form-section {
@@ -70,10 +67,6 @@ a {
     color: #596D48;
 }
 
-.container {
-    position: relative;
-    margin-left: auto;
-}
 
 .logo-card {
     position: absolute;
@@ -106,8 +99,7 @@ a {
     top: 95vh;
     left: 200px;
     color: white;
-    font-size: 1rem;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .form {
@@ -125,7 +117,6 @@ a {
 
 .legend {
     margin-top: 3rem;
-    font-family: sans-serif;
     font-size: 2rem;
     grid-column: span 2;
 }
@@ -154,13 +145,11 @@ input {
 }
 label {
     font-size: 0.7rem;
-    font-family: sans-serif;
 }
 
 .error {
     visibility: hidden;
     color: red;
     font-size: 0.8rem;
-    font-family: sans-serif;
     margin-top: 1px;
 }
